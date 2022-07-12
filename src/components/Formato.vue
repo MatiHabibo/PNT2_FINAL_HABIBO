@@ -61,8 +61,8 @@ export default {
   methods: {
     dameCantidad() {
       var cant = 0;
-      if(this.myInput.split('').length > 0){
-        cant = this.myInput.trim().replace(/\s+/gi, ' ').split(" ").length;
+      if((this.myInput.split('').length > 0) && (this.myInput.trim().length > 0)){
+          cant = this.myInput.trim().replace(/\s+/gi, ' ').split(" ").length;
       }
       return cant
     },
