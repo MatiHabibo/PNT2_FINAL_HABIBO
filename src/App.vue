@@ -1,13 +1,16 @@
 <template>
   <div id="app">
+    <Formato/>
   </div>
 </template>
 
 <script>
+import Formato from './components/Formato.vue'
 
 export default {
   name: 'App',
   components: {
+    Formato
   }
 }
 </script>
